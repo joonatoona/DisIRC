@@ -1,8 +1,10 @@
+const fs = require('fs');
+
 const DisIRCBridge = require(__dirname + '/models/bridge'), DisIRCSettings = require(__dirname + '/models/settings');
 
 console.log(__dirname)
 
-if (!fs.exists(__dirname + "/options.json")) {
+if (!fs.existsSync(__dirname + "/options.json")) {
     console.log("Settings file does not exist.");
     console.log("Generating settings from template.");
     fs.writeFileSync(__dirname + "/options.json", DisIRCSettings.generateSettings());
@@ -12,3 +14,4 @@ if (!fs.exists(__dirname + "/options.json")) {
 
 const settings = new DisIRCSettings(__dirname + "/options.json").settings;
 
+const bridge = new DisIRCBridge(settings);

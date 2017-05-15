@@ -25,4 +25,4 @@ class DisIRC_Settings {
     }
 }
 
-module.exports = DisIRCSettings;
+module.exports = DisIRC_Settings;
