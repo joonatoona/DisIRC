@@ -1,0 +1,23 @@
+{
+  "name": "disirc",
+  "version": "1.0.0",
+  "description": "IRC <> Discord",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joonatoona/DisIRC.git"
+  },
+  "author": "joonatoona",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/joonatoona/DisIRC/issues"
+  },
+  "homepage": "https://github.com/joonatoona/DisIRC#readme",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "irc": "^0.5.2"
+  }
+}
